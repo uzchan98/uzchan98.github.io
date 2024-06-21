@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 블로그</title>
+    <title>UZCHAN98</title>
     <style>
-        /* 여기에 CSS 스타일을 추가할 수 있습니다 */
+        /* 전체 스타일 */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -20,11 +20,50 @@
             text-align: center;
         }
         .container {
-            width: 80%;
+            display: flex;
+            flex-direction: row;
+            width: 95%;
             margin: 20px auto;
             background-color: #fff;
             padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .main-content {
+            flex: 9;
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .contact-info a {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .categories {
+            margin-top: 20px;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .categories li {
+            margin-bottom: 10px;
+        }
+        .categories a {
+            color: #333;
+            text-decoration: none;
+        }
+        .categories a:hover {
+            text-decoration: underline;
         }
         .post {
             margin-bottom: 20px;
@@ -42,29 +81,52 @@
 </head>
 <body>
     <header>
-        <h1>나의 블로그</h1>
-        <p>최신 소식과 이야기를 공유합니다.</p>
+        <h1>Uzchan98의 블로그</h1>
+        <p>학습 내용을 정리합니다.</p>
     </header>
 
     <div class="container">
-        <section class="post">
-            <h2>첫 번째 포스트 제목</h2>
-            <p>첫 번째 포스트의 간단한 요약이 들어갑니다.</p>
-            <a href="post1.html">자세히 보기</a>
-        </section>
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <img src="assets/UZCHAN98.png" alt="프로필 사진" class="profile-img">
+            <div class="contact-info">
+                <a href="https://github.com/uzchan98">GitHub</a>
+                <a href="mailto:uzchan98@naver.com">uzchan98@naver.com</a>
+                <!-- 추가적인 연락처 정보 -->
+            </div>
 
-        <section class="post">
-            <h2>두 번째 포스트 제목</h2>
-            <p>두 번째 포스트의 간단한 요약이 들어갑니다.</p>
-            <a href="post2.html">자세히 보기</a>
-        </section>
+            <!-- 카테고리 목록 -->
+            <h3>카테고리</h3>
+            <ul class="categories">
+                <li><a href="#">ROS</a></li>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">...</a></li>
+                <!-- 추가적인 카테고리 목록 -->
+            </ul>
+        </div>
 
-        <!-- 추가적인 포스트들을 위한 섹션들 -->
+        <!-- 우측 메인 컨텐츠 영역 -->
+        <div class="main-content">
+            <section class="post">
+                <h2>첫 번째 포스트 제목</h2>
+                <p>첫 번째 포스트의 간단한 요약이 들어갑니다.</p>
+                <a href="post1.html">자세히 보기</a>
+            </section>
 
+            <section class="post">
+                <h2>두 번째 포스트 제목</h2>
+                <p>두 번째 포스트의 간단한 요약이 들어갑니다.</p>
+                <a href="post2.html">자세히 보기</a>
+            </section>
+
+            <!-- 추가적인 포스트들을 위한 섹션들 -->
+
+        </div>
     </div>
 
     <footer>
-        <p>&copy; 2024 나의 블로그. 모든 권리 보유.</p>
+        <p>&copy; 2024 uzchan98's blog. All rights reserved.</p>
     </footer>
 </body>
 </html>
