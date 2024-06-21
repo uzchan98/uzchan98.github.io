@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>첫 번째 포스트 제목 - 나의 블로그</title>
+    <style>
+        /* 전체 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        .main-content {
+            flex: 4;
+        }
+        .profile-img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        .contact-info a {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .categories {
+            margin-top: 20px;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .categories li {
+            margin-bottom: 10px;
+        }
+        .categories a {
+            color: #333;
+            text-decoration: none;
+        }
+        .categories a:hover {
+            text-decoration: underline;
+        }
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+        .post h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .post p {
+            color: #666;
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .about-content h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .about-content p {
+            font-size: 1.1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>나의 블로그</h1>
+    </header>
+
+    <div class="container">
+        <!-- 좌측 사이드바 -->
+        <div class="sidebar">
+            <img src="profile.jpg" alt="프로필 사진" class="profile-img">
+            <div class="contact-info">
+                <a href="https://github.com/yourusername">GitHub 프로필</a>
+                <a href="mailto:youremail@example.com">youremail@example.com</a>
+                <!-- 추가적인 연락처 정보 -->
+            </div>
+
+            <!-- 카테고리 목록 -->
+            <h3>카테고리</h3>
+            <ul class="categories">
+                <li><a href="#">기술</a></li>
+                <li><a href="#">여행</a></li>
+                <li><a href="#">음식</a></li>
+                <li><a href="#">영화 리뷰</a></li>
+                <!-- 추가적인 카테고리 목록 -->
+            </ul>
+        </div>
+
+        <!-- 우측 메인 컨텐츠 영역 -->
+        <div class="main-content">
+            <!-- 포스트 내용 -->
+            <div class="post">
+                <h2>첫 번째 포스트 제목</h2>
+                <p>
+                    첫 번째 포스트의 상세 내용이 이곳에 들어갑니다. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero a justo vehicula, at convallis eros suscipit.
+                </p>
+                <p>
+                    Vestibulum ultricies sapien nec lacus dictum, a sollicitudin tellus facilisis. Quisque eget nisi et eros ullamcorper dapibus. Proin volutpat, odio sit amet convallis consectetur, ligula turpis sollicitudin eros, a venenatis est nisi eget est.
+                </p>
+                <p>
+                    Phasellus malesuada, odio sit amet tempus maximus, libero lorem viverra ligula, at rutrum lacus odio eget nunc. Ut convallis, dolor id efficitur pretium, nisl dui venenatis mi, eu feugiat nulla turpis at metus.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 나의 블로그. 모든 권리 보유.</p>
+    </footer>
+</body>
+</html>
